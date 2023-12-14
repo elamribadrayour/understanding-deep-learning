@@ -1,5 +1,6 @@
 stqdm==0.0.5
 pandas==2.1.4
+jaxlib==0.4.23 
 plotly==5.18.0 
 jax[cpu]==0.4.21
 streamlit==1.29.0
