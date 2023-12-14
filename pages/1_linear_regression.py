@@ -9,7 +9,7 @@ from stqdm import stqdm
 from matplotlib import pyplot as plt
 
 
-streamlit.title("1 Feature Linear Regression")
+streamlit.title("Linear Regression")
 
 
 @streamlit.cache_data()
