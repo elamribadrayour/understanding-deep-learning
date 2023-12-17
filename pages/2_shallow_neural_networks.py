@@ -186,11 +186,11 @@ def plot_model() -> None:
 def plot_artifacts(accuracies: list[float], losses: list[float]) -> None:
     streamlit.markdown("## Training Artifacts")
 
-    l = round(float(losses[-1]), 2)
+    loss_ = round(float(losses[-1]), 2)
     acc = int(100 * float(accuracies[-1]))
     columns = streamlit.columns(2)
     columns[0].metric(label="accuracy", value=f"{acc}%")
-    columns[1].metric(label="loss", value=f"{l}")
+    columns[1].metric(label="loss", value=f"{loss_}")
 
     fig, ax = plt.subplots()
     fig.set_facecolor("#faf9f9")
